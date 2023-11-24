@@ -1,0 +1,286 @@
+---
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 16, 223, 239
+  DISPLAY_SIZE: 5"
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 800
+    HEIGHT: 480
+static_text:
+  DISK_LABEL:
+    TEXT: "DISK"
+    X: 700
+    Y: 60
+    FONT: roboto/Roboto-Bold.ttf
+    FONT_SIZE: 32
+    FONT_COLOR: 16, 223, 239
+    BACKGROUND_IMAGE: background.png
+  DISK_USED_LABEL:
+    TEXT: "Used:"
+    X: 582
+    Y: 108
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 24
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_IMAGE: background.png
+  GPU_NAME:
+    TEXT: "RTX 3090"
+    X: 680
+    Y: 200
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 16
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_IMAGE: background.png
+  CPU_NAME:
+    TEXT: "10900K"
+    X: 40
+    Y: 200
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 16
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_IMAGE: background.png
+  MY_NAME:
+    TEXT: "AK"
+    X: 386
+    Y: 410
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 24
+    FONT_COLOR: 128, 255, 255
+    BACKGROUND_IMAGE: background.png
+STATS:
+  CPU:
+    PERCENTAGE:
+      INTERVAL: 1
+      RADIAL:
+        SHOW: True
+        X: 398
+        Y: 241
+        RADIUS: 72
+        WIDTH: 10
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 20
+        ANGLE_SEP: 0
+        CLOCKWISE: True
+        BAR_COLOR: 255, 0, 173
+        SHOW_TEXT: True
+        SHOW_UNIT: True
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 255, 0, 173
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        #X: 200
+        #Y: 260
+        X: 164
+        Y: 230
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        X: 42
+        Y: 260
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      RADIAL:
+        SHOW: True
+        X: 606
+        Y: 242
+        RADIUS: 53
+        WIDTH: 10
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 20
+        ANGLE_SEP: 0
+        CLOCKWISE: True
+        BAR_COLOR: 255, 0, 173
+        SHOW_TEXT: True
+        SHOW_UNIT: True
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 16
+        FONT_COLOR: 128, 255, 255
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    MEMORY:
+      GRAPH:
+        SHOW: True
+        X: 637
+        Y: 412
+        WIDTH: 130
+        HEIGHT: 18
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 255, 0, 173
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 8, 20, 66
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 656
+        Y: 380
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+      RADIAL:
+        SHOW: True
+        X: 576
+        Y: 391
+        RADIUS: 48
+        WIDTH: 8
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 20
+        ANGLE_SEP: 0
+        CLOCKWISE: True
+        BAR_COLOR: 255, 0, 173
+        SHOW_TEXT: True
+        SHOW_UNIT: True
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 14
+        FONT_COLOR: 128, 255, 255
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        X: 703
+        Y: 260
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+  MEMORY:
+    INTERVAL: 5
+    VIRTUAL:
+      GRAPH:
+        SHOW: True
+        X: 32
+        Y: 413
+        WIDTH: 134
+        HEIGHT: 17
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 82, 255, 255
+        BAR_OUTLINE: False
+        BACKGROUND_COLOR: 8, 20, 66
+      USED:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 31
+        Y: 380
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+      RADIAL:
+        SHOW: True
+        X: 224
+        Y: 391
+        RADIUS: 47
+        WIDTH: 8
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        ANGLE_START: 120
+        ANGLE_END: 60
+        ANGLE_STEPS: 20
+        ANGLE_SEP: 0
+        CLOCKWISE: True
+        BAR_COLOR: 255, 0, 173
+        SHOW_TEXT: True
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 16
+        FONT_COLOR: 128, 255, 255
+        # BACKGROUND_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+  DISK:
+    INTERVAL: 100
+    USED:
+      GRAPH:
+        SHOW: True
+        X: 588
+        Y: 146
+        WIDTH: 180
+        HEIGHT: 8
+        MIN_VALUE: 0
+        MAX_VALUE: 100
+        BAR_COLOR: 82, 255, 255
+        BAR_OUTLINE: False
+        BACKGROUND_IMAGE: background.png
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 660
+        Y: 108
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 24
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+  NET:
+    INTERVAL: 1
+    ETH:
+      UPLOAD:
+        TEXT:
+          SHOW: True
+          X: 76
+          Y: 102
+          FONT: generale-mono/GeneraleMonoA.ttf
+          FONT_SIZE: 24
+          FONT_COLOR: 128, 255, 255
+          BACKGROUND_IMAGE: background.png
+      DOWNLOAD:
+        TEXT:
+          SHOW: True
+          X: 76
+          Y: 133
+          FONT: generale-mono/GeneraleMonoA.ttf
+          FONT_SIZE: 24
+          FONT_COLOR: 128, 255, 255
+          BACKGROUND_IMAGE: background.png
+  DATE:
+    INTERVAL: 1
+    DAY:
+      TEXT:
+        SHOW: True
+        X: 100
+        Y: 14
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 20
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
+    HOUR:
+      TEXT:
+        SHOW: True
+        X: 560
+        Y: 14
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 20
+        FONT_COLOR: 128, 255, 255
+        BACKGROUND_IMAGE: background.png
